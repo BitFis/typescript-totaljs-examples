@@ -1,9 +1,0 @@
-﻿{
-  "dependencies": {
-    "total.js": ">= 1.6.1",
-    "typescript": ">= 1.0.1"
-  },
-  "devDependencies": {
-    "tsd": "0.5.x"
-  }
-}
