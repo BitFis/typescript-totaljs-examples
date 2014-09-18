@@ -27,3 +27,12 @@ Or run in every example **npm install**, mostly you are required to run this com
 ## Documentation & Framework
 
 You will find more informations about the total.js framework and the documentation on the offical webpage [http://www.totaljs.com/]
+
+## Contribute Examples
+
+To contribute new examples you have to do some stuff like:
+
+* setting up package.json
+* setting up tsd.json
+
+but this is not defined jet. - template coming soon
