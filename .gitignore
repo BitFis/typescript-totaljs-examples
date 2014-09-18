@@ -3,6 +3,7 @@
 
 # ignoreing VS build fodlers
 **/obj
+obj
 **/node_modules
 
 # only commit totaljs typings, rest will be loaded dynamically

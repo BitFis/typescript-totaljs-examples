@@ -3071,5 +3071,22 @@ declare module "total.js/builders" {
     export function Pagination(items: number, page: number, max: number, format?: string): TotalJS.Pagination;
 }
 
-declare var utils: TotalJS.Utils;
 declare var framework: TotalJS.Framework;
+
+/**
+ * global objects or functions.
+ */
+declare var utils: TotalJS.Utils;
+declare var mail: TotalJS.Mail;
+declare module builders {
+
+    /**
+     * Create ErrorBuilder instance.
+     */
+    export interface ErrorBuilder extends TotalJS.ErrorBuilder { }
+
+    /**
+     * Create UrlBuilder instance.
+     */
+    export interface UrlBuilder extends TotalJS.UrlBuilder { }
+}

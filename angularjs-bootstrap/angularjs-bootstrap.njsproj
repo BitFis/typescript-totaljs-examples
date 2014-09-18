@@ -15,6 +15,7 @@
     <EnableTypeScript>true</EnableTypeScript>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+	<BaseIntermediateOutputPath>../</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -26,10 +27,6 @@
     <Content Include="app\robots.txt" />
     <Compile Include="app\app.js" />
     <Compile Include="controllers\default.js" />
-    <Content Include="tmp\css-app.css" />
-    <Compile Include="tmp\app.js" />
-    <Compile Include="tmp\controllers-home.js" />
-    <Compile Include="tmp\controllers-user.js" />
     <Content Include="views\app.html" />
     <Content Include="views\_layout.html" />
     <Compile Include="app\controllers\home.js" />
@@ -48,7 +45,6 @@
     <Folder Include="app\templates" />
     <Folder Include="app\views" />
     <Folder Include="controllers" />
-    <Folder Include="tmp" />
     <Folder Include="views" />
   </ItemGroup>
   <ItemGroup>

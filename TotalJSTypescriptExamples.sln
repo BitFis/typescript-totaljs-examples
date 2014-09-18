@@ -7,6 +7,12 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Views", "views\views.njspro
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "angularjs-bootstrap", "angularjs-bootstrap\angularjs-bootstrap.njsproj", "{D6F319E4-714F-443E-9788-E814FEAE3F93}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F079691F-3601-452A-B0F2-8F386FF9D129}"
+	ProjectSection(SolutionItems) = preProject
+		typings\totaljs\nosql.d.ts = typings\totaljs\nosql.d.ts
+		typings\totaljs\totaljs.d.ts = typings\totaljs\totaljs.d.ts
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
