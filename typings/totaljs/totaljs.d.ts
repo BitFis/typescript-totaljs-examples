@@ -185,9 +185,9 @@ declare module TotalJS {
          */
         configure(value, rewrite?): Framework;
 
-        controller(name): Framework;
+        controller(name): Controller;
 
-        database(name): Framework;
+        database(name): NoSQLDatabase;
 
         decrypt(name, key, jsonConvert?): Framework;
 
@@ -266,9 +266,11 @@ declare module TotalJS {
             options?: Object,
             controller?: TotalJS.Controller) => void);
 
-        model(name: string): Framework;
+        model(name: string);
+        model<T>(name: string): T;
 
-        module(name): Framework;
+        module(name): Object;
+        module<T>(name): T;
 
         noCache(req, res?): Framework;
 
@@ -3049,7 +3051,34 @@ declare module "total.js/image" {
 
 
 declare module "total.js/builders" {
-    
+    export = builders;
+}
+
+
+/**
+ * global objects or functions.
+ */
+
+/**
+ * Get Framework
+ */
+declare var framework: TotalJS.Framework;
+
+/**
+ * Get FrameworkUtils.
+ */
+declare var utils: TotalJS.Utils;
+
+/**
+ * Get FrameworkMail.
+ */
+declare var mail: TotalJS.Mail;
+
+/**
+ * Get Builders (schema, error, pagination, etc.).
+ */
+declare module builders {
+
     /**
      * Create ErrorBuilder instance.
      */
@@ -3071,22 +3100,40 @@ declare module "total.js/builders" {
     export function Pagination(items: number, page: number, max: number, format?: string): TotalJS.Pagination;
 }
 
-declare var framework: TotalJS.Framework;
-
 /**
- * global objects or functions.
+ * Global Methods
  */
-declare var utils: TotalJS.Utils;
-declare var mail: TotalJS.Mail;
-declare module builders {
 
-    /**
-     * Create ErrorBuilder instance.
-     */
-    export interface ErrorBuilder extends TotalJS.ErrorBuilder { }
+declare function CONFIG(key: string): Object;
+declare function CONFIG<T>(key: string): T;
 
-    /**
-     * Create UrlBuilder instance.
-     */
-    export interface UrlBuilder extends TotalJS.UrlBuilder { }
-}
+declare function CONTROLLER(name: string): TotalJS.Controller;
+declare function CONTROLLER<T>(name: string): T;
+
+declare function DATABASE(): TotalJS.NoSQLDatabase;
+
+declare function FUNCTION(name: string): TotalJS.Framework;
+
+declare function INCLUDE(name: string, options?: Object): Object;
+declare function INCLUDE<T>(name: string, options?: Object): T;
+
+declare function INSTALL(type: string, declaration: string, options?: Object, callback?: (err: Error) => void);
+declare function INSTALL(type: string, declaration: Function, options?: Object, callback?: (err: Error) => void);
+declare function INSTALL(type: string, name: string, declaration: string, options?: Object, callback?: (err: Error) => void);
+declare function INSTALL(type: string, name: string, declaration: Function, options?: Object, callback?: (err: Error) => void);
+
+declare function LOG(): TotalJS.Framework;
+
+declare function MODEL(name: string): Object;
+declare function MODEL<T>(name: string): T;
+
+declare function MODULE(name: string): Object;
+declare function MODULE<T>(name: string): T;
+
+declare function RESOURCE(name: string, key?: string): Object;
+declare function RESOURCE<T>(name: string, key?: string): T;
+
+declare function SOURCE(name: string, options?: Object): Object;
+declare function SOURCE<T>(name: string, options?: Object): T;
+
+declare function UNINSTALL(type: string, name: string, options?: Object): TotalJS.Framework;
