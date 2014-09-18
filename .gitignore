@@ -3,10 +3,15 @@
 
 # ignoreing VS build fodlers
 ./**/obj
-./**/node_modules
+**/node_modules
+
+# only commit totaljs typings, rest will be loaded dynamically
+**/typings/*
+**/typings/tsd.d.ts
+!**/typings/totaljs
 
 # ignore compiled script source
-./**/*.js
-./**/*.js.map
+**/*.js
+**/*.js.map
 .ntvs_analysis.dat
-./**/.tscache/*
+**/.tscache/*
