@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AngularJS", "angularjs\AngularJS.njsproj", "{0DB7BEE8-7689-4BCE-A294-16950276E865}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Views", "views\Views.njsproj", "{5B6D80E5-B24A-4AB6-834E-B6F83F5F9A1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{0DB7BEE8-7689-4BCE-A294-16950276E865}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DB7BEE8-7689-4BCE-A294-16950276E865}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DB7BEE8-7689-4BCE-A294-16950276E865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B6D80E5-B24A-4AB6-834E-B6F83F5F9A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B6D80E5-B24A-4AB6-834E-B6F83F5F9A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B6D80E5-B24A-4AB6-834E-B6F83F5F9A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B6D80E5-B24A-4AB6-834E-B6F83F5F9A1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
