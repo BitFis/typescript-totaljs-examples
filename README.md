@@ -11,9 +11,9 @@ It has been created to show possible use of the totaljs framework with typescrip
 
 All examples use total.js. 
 
-Install total.js globaly with __ npm install -g total.js __* this recomeded by the original creator of the example repository. 
+Install total.js globaly with *npm install -g total.js* this recomeded by the original creator of the example repository. 
 
-Or run in every example __ npm install __, mostly you are required to run this command anyway.
+Or run in every example *npm install*, mostly you are required to run this command anyway.
 
 ## Documentation & Framework
 
