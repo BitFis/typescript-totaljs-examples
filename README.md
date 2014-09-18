@@ -7,7 +7,16 @@ This Repository contains some Examples copied from the offical example-repositor
 
 It has been created to show possible use of the totaljs framework with typescript.
 
-## Documentation & Framework
+## Setup Examples
+
+To safely setup the examples run in all example directory the **npm install** command.
+
+### tsd
+
+All examples need tsd to get the latest typescript definitions. I recomend installing tsd globaly **npm install tsd -g**.
+But running **npm install** would also be enough.
+
+### total.js
 
 All examples use total.js. 
 
