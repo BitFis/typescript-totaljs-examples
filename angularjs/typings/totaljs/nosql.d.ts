@@ -219,7 +219,7 @@ declare module TotalJS {
          * @param name unique file name
          * @param callback? callback after function called
          */
-        read(id: number, fnCallback: (err?: any, stream?: ReadWriteStream, header?: NoSQLBinaryHeader) => void);
+        read(id: number, fnCallback: (err?: any, stream?: NodeJS.ReadWriteStream, header?: NoSQLBinaryHeader) => void);
 
         /**
          * read binary file

@@ -13,12 +13,15 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>AngularJS</Name>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include="package.json" />
     <Content Include="readme.md" />
-    <Compile Include="index.js" />
     <Content Include="app\robots.txt" />
     <Compile Include="app\app.js" />
     <Compile Include="controllers\default.js" />
@@ -41,7 +44,15 @@
     <Folder Include="app\templates" />
     <Folder Include="app\views" />
     <Folder Include="controllers" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\totaljs\" />
     <Folder Include="views" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="index.ts" />
+    <TypeScriptCompile Include="typings\totaljs\nosql.d.ts" />
+    <TypeScriptCompile Include="typings\totaljs\totaljs.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />

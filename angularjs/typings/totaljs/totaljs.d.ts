@@ -321,11 +321,11 @@ declare module TotalJS {
 
         responseFile(req: Object, res: Object, filename: string, downloadName?: string, headers?: Object): Framework;
 
-        responseImage(req: Object, res: Object, filename: ReadableStream, fnProcess: (image: TotalJS.Image) => void, headers: Object, useImageMagick?: boolean): Framework;
+        responseImage(req: Object, res: Object, filename: NodeJS.ReadableStream, fnProcess: (image: TotalJS.Image) => void, headers: Object, useImageMagick?: boolean): Framework;
 
         responseImage(req: Object, res: Object, filename: string, fnProcess: (image: TotalJS.Image) => void, headers: Object, useImageMagick?: boolean): Framework;
 
-        responseImageWithoutCache(req: Object, res: Object, filename: ReadableStream, fnProcess: (image: TotalJS.Image) => void, headers: Object, useImageMagick?: boolean): Framework;
+        responseImageWithoutCache(req: Object, res: Object, filename: NodeJS.ReadableStream, fnProcess: (image: TotalJS.Image) => void, headers: Object, useImageMagick?: boolean): Framework;
 
         responseImageWithoutCache(req: Object, res: Object, filename: string, fnProcess: (image: TotalJS.Image) => void, headers: Object, useImageMagick?: boolean): Framework;
 
@@ -667,7 +667,7 @@ declare module TotalJS {
              * > @param filename? Filename with path.
              * @return Status
              */
-            temporary(name: string, stream: ReadableStream, callback?: (err?: Error, filename?: string) => void): boolean;
+            temporary(name: string, stream: NodeJS.ReadableStream, callback?: (err?: Error, filename?: string) => void): boolean;
 
             /**
              * Create a view file into the framework.config['directory-views'].
@@ -1366,7 +1366,7 @@ declare module TotalJS {
         
         meta(title: string, description?: string, keywords?: string, picture?: string): Controller;
 
-        mmr(filename: string, stream: ReadableStream, cb?: Function): Controller;
+        mmr(filename: string, stream: NodeJS.ReadableStream, cb?: Function): Controller;
 
         /**
          * Return a model object.
@@ -1728,7 +1728,7 @@ declare module TotalJS {
          * @param headers? Additional headers.
          * @return Controller object 
          */
-        stream(contentType: string, stream: ReadableStream, downloadName?: string, headers?: Object): Controller;
+        stream(contentType: string, stream: NodeJS.ReadableStream, downloadName?: string, headers?: Object): Controller;
 
         /**
          * Response 400 error - Bad request.
@@ -2343,7 +2343,7 @@ declare module TotalJS {
          */
         send(
             name: string,
-            stream: ReadableStream,
+            stream: NodeJS.ReadableStream,
             url: string,
             callback?: (
                 err?: Error,
@@ -2543,7 +2543,7 @@ declare module TotalJS {
 
         output(type: string): Image;
 
-        pipe(stream: WritableStream, type?: string, options?: Object): Image;
+        pipe(stream: NodeJS.WritableStream, type?: string, options?: Object): Image;
 
         quality(percentage: number): Image;
 
@@ -2797,7 +2797,7 @@ declare module TotalJS {
         isImage(): boolean;
         isVideo(): boolean;
         md5(callback: (err?: Error, hash?: string) => void): HttpFile;
-        pipe(stream: WritableStream, options?: Object): HttpFile;
+        pipe(stream: NodeJS.WritableStream, options?: Object): HttpFile;
         read(callback: (err?: Error, data?: NodeBuffer) => void): HttpFile;
         readSync(): NodeBuffer;
         stream(options?: Object): HttpFile;
@@ -2906,7 +2906,7 @@ interface Response {
     noCache(): Response;
     send(code, body, type?: string): Response;
     send(): Response;
-    stream(type: string, stream: ReadableStream, downloadName?: string, headers?: Object): Response;
+    stream(type: string, stream: NodeJS.ReadableStream, downloadName?: string, headers?: Object): Response;
 
 }
 
@@ -3043,7 +3043,7 @@ declare module "total.js/image" {
      * @param imagemagick? Use ImageMagick (true) or GraphicsMagick (false)?Default: false
      * @return Image object
      */
-    export function load(filename: ReadableStream, imagemagick?: boolean): TotalJS.Image;
+    export function load(filename: NodeJS.ReadableStream, imagemagick?: boolean): TotalJS.Image;
 
 }
 
