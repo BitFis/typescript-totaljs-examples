@@ -13,8 +13,7 @@ To safely setup the examples run in all example directory the **npm install** co
 
 ### tsd
 
-All examples need tsd to get the latest typescript definitions. I recomend installing tsd globaly **npm install tsd -g**.
-But running **npm install** would also be enough.
+All examples need tsd to get the latest typescript definitions. tsd should be installed globaly: **npm install tsd -g**.
 
 ### total.js
 
