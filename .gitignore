@@ -16,5 +16,5 @@ obj
 # ignore compiled script source
 **/*.js
 **/*.js.map
-.ntvs_analysis.dat
+.ntvs_analysis.dat*
 **/.tscache/*
