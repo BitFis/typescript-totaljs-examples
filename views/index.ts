@@ -5,5 +5,5 @@
 // http://www.totaljs.com
 // ===================================================
 
-import total = require("total.js");
+var total = require("total.js");
 total.http("debug");
