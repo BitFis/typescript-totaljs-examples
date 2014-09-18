@@ -4,7 +4,14 @@
 ## First step
 
 ```
-npm install total.js
+// global installation of tsd to get up to date definitions
+npm install tsd -g
+
+// install dependencies
+npm install
+
+// load definition files
+tsd update -os
 ```
 
 ## Second step

@@ -8,6 +8,10 @@
 # only commit totaljs typings, rest will be loaded dynamically
 **/typings/*
 
+# ignore temporary folder
+
+**/tmp
+
 # ignore compiled script source
 **/*.js
 **/*.js.map
