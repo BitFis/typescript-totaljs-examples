@@ -2566,7 +2566,7 @@ declare module TotalJS {
         stream(type?: string): Image;
 
     }
-    
+
     /**< Builders */
 
     /**

@@ -7,8 +7,6 @@
 
 # only commit totaljs typings, rest will be loaded dynamically
 **/typings/*
-**/typings/tsd.d.ts
-!**/typings/totaljs
 
 # ignore compiled script source
 **/*.js
