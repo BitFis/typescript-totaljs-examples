@@ -1,0 +1,12 @@
+# ignore VS documents
+*.suo
+
+# ignoreing VS build fodlers
+./**/obj
+./**/node_modules
+
+# ignore compiled script source
+./**/*.js
+./**/*.js.map
+.ntvs_analysis.dat
+./**/.tscache/*
