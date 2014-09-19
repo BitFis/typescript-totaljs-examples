@@ -1,16 +1,18 @@
 # How to run it?
 
-## First step
+## First step - Compile
 
-1. Global installation of tsd to get up to date typescript definitions
+Global installation of tsd to get up to date typescript definitions
 ``` bash
 npm install tsd -g
 ```
-2. Install dependencies
+
+Install dependencies
 ``` bash
 npm install
 ```
-3. Load definition files
+
+Load definition files
 ``` bash
 tsd update -os
 ```
@@ -21,20 +23,21 @@ Open the solution _TotalJSTypescriptExamples.sln_ and compile this project
 
 ### Using Grunt
 
-1. Install grunt-cli
+Install grunt-cli
 ``` bash
 npm install grunt-cli -g
 ```
-2. Run Grunt
+
+Run Grunt
 ``` bash
 grunt
 ```
 
-## Second step
+## Second step - Start server
 
 Run server
 ``` bash
 node index
 ```
 
-Open browser: <http://127.0.0.1:8000>
+Open browser: <http://127.0.0.1:8000>s
