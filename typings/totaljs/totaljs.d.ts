@@ -3049,6 +3049,15 @@ declare module "total.js/image" {
 
 }
 
+declare module "total.js/controller" {
+
+    var controller: TotalJS.Controller;
+
+    /**
+     * export class controller
+     */
+    export = controller;
+}
 
 declare module "total.js/builders" {
     export = builders;
