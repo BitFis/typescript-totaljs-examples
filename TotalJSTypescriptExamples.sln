@@ -9,6 +9,14 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "angularjs-bootstrap", "angu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F079691F-3601-452A-B0F2-8F386FF9D129}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "angularjs-routing", "angularjs-routing\angularjs-routing.njsproj", "{977C47F6-730F-4DD2-9767-76C943EF86B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "typings", "typings", "{02C4DD6F-71A3-497C-BB41-EFC3C79BC94E}"
+	ProjectSection(SolutionItems) = preProject
 		typings\totaljs\nosql.d.ts = typings\totaljs\nosql.d.ts
 		typings\totaljs\totaljs.d.ts = typings\totaljs\totaljs.d.ts
 	EndProjectSection
@@ -31,8 +39,15 @@ Global
 		{D6F319E4-714F-443E-9788-E814FEAE3F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6F319E4-714F-443E-9788-E814FEAE3F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6F319E4-714F-443E-9788-E814FEAE3F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977C47F6-730F-4DD2-9767-76C943EF86B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977C47F6-730F-4DD2-9767-76C943EF86B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977C47F6-730F-4DD2-9767-76C943EF86B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977C47F6-730F-4DD2-9767-76C943EF86B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02C4DD6F-71A3-497C-BB41-EFC3C79BC94E} = {F079691F-3601-452A-B0F2-8F386FF9D129}
 	EndGlobalSection
 EndGlobal

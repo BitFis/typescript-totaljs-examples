@@ -40,6 +40,7 @@
     <Folder Include="app\templates" />
     <Folder Include="app\views" />
     <Folder Include="controllers" />
+    <Folder Include="typings\" />
     <Folder Include="views" />
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +49,7 @@
     <TypeScriptCompile Include="app\controllers\users.ts" />
     <TypeScriptCompile Include="controllers\default.ts" />
     <TypeScriptCompile Include="index.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />

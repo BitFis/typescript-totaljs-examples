@@ -2,9 +2,11 @@
 *.suo
 
 # ignoreing VS build fodlers
-**/obj
+*/obj
 obj
-**/node_modules
+Debug
+Release
+*/node_modules
 
 # only commit typings in top typing folder, rest will be loaded dynamically and therefor ignored
 **/typings/*
@@ -12,7 +14,7 @@ obj
 !typings/*
 
 # ignore temporary folder
-**/tmp
+*/tmp
 
 #ignore temporary files
 *.tmp*
@@ -21,7 +23,7 @@ obj
 **/*.js
 **/*.js.map
 .ntvs_analysis.dat*
-**/.tscache/*
+*/.tscache/*
 
 # keep grunt js files for compiling
-!**/Gruntfile.js
+!*/Gruntfile.js
