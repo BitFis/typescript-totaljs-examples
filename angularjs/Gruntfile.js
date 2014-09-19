@@ -19,7 +19,7 @@
                 compile: true,                 // perform compilation. [true (default) | false]
                 comments: false,               // same as !removeComments. [true | false (default)]
                 target: 'es5',                 // target javascript language. [es3 (default) | es5]
-                module: 'amd',                 // target javascript module style. [amd (default) | commonjs]
+                module: 'commonjs',                 // target javascript module style. [amd (default) | commonjs]
                 sourceMap: true,               // generate a source map for every output js file. [true (default) | false]
                 sourceRoot: '',                // where to locate TypeScript files. [(default) '' == source ts location]
                 mapRoot: 'obj/',               // where to locate .map.js files. [(default) '' == generated js location.]

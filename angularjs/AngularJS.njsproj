@@ -52,6 +52,9 @@
     <TypeScriptCompile Include="index.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gruntfile.js" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
   <ProjectExtensions>

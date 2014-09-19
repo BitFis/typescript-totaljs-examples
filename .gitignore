@@ -11,8 +11,10 @@ obj
 !typings/*
 
 # ignore temporary folder
-
 **/tmp
+
+#ignore temporary files
+*.tmp*
 
 # ignore compiled script source
 **/*.js
