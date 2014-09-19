@@ -6,7 +6,7 @@
     <ProjectGuid>{d6f319e4-714f-443e-9788-e814feae3f93}</ProjectGuid>
     <ProjectHome />
     <ProjectView>ShowAllFiles</ProjectView>
-    <StartupFile>_index.js</StartupFile>
+    <StartupFile>index.js</StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
@@ -15,7 +15,7 @@
     <EnableTypeScript>true</EnableTypeScript>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
-	<BaseIntermediateOutputPath>../</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>../</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -23,14 +23,9 @@
     <Content Include="package.json" />
     <Content Include="readme.md" />
     <Content Include="tsd.json" />
-    <Compile Include="_index.js" />
     <Content Include="app\robots.txt" />
-    <Compile Include="app\app.js" />
-    <Compile Include="controllers\default.js" />
     <Content Include="views\app.html" />
     <Content Include="views\_layout.html" />
-    <Compile Include="app\controllers\home.js" />
-    <Compile Include="app\controllers\user.js" />
     <Content Include="app\css\app.css" />
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +43,10 @@
     <Folder Include="views" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="app\app.ts" />
+    <TypeScriptCompile Include="app\controllers\home.ts" />
+    <TypeScriptCompile Include="app\controllers\users.ts" />
+    <TypeScriptCompile Include="controllers\default.ts" />
     <TypeScriptCompile Include="index.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
