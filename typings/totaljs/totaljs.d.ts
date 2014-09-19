@@ -1,4 +1,4 @@
-﻿// Type definitions for totaljs
+﻿// Type definitions for total.js
 // Project: http://totaljs.com
 // Definitions by: Lucien Zuercher <https://github.com/bigz94>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped

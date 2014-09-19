@@ -1,13 +1,14 @@
-﻿module App {
+﻿module angularjs {
 
-    export interface UserScope {
+    export interface UsersScope {
         name: string;
         age: number;
     }
 
     class UserCtrl {
-        constructor(private $scope: UserScope) {
+        constructor(private $scope: UsersScope) {
             $scope.name = "user";
         }
     }
+
 }

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "AngularJS", "angularjs\angularjs.njsproj", "{0DB7BEE8-7689-4BCE-A294-16950276E865}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "angularjs", "angularjs\angularjs.njsproj", "{0DB7BEE8-7689-4BCE-A294-16950276E865}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Views", "views\views.njsproj", "{5B6D80E5-B24A-4AB6-834E-B6F83F5F9A1F}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "views", "views\views.njsproj", "{5B6D80E5-B24A-4AB6-834E-B6F83F5F9A1F}"
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "angularjs-bootstrap", "angularjs-bootstrap\angularjs-bootstrap.njsproj", "{D6F319E4-714F-443E-9788-E814FEAE3F93}"
 EndProject

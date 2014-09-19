@@ -1,7 +1,8 @@
-﻿module App {
+﻿module angularjs {
+
     export interface HomeScope {
         name: string;
-        users: UserScope[];
+        users: UsersScope[];
     }
 
     class HomeCtrl {
@@ -16,4 +17,5 @@
     }
 
     app.controller("HomeCtrl", HomeCtrl);
+
 }
