@@ -2,6 +2,11 @@
 
 ## First step - Compile
 
+Install typescript globaly
+```
+npm install typescript -g
+```
+
 Global installation of tsd to get up to date typescript definitions
 ``` bash
 npm install tsd -g
@@ -33,6 +38,7 @@ Run Grunt
 grunt
 ```
 
+
 ## Second step - Start server
 
 Run server
@@ -41,3 +47,17 @@ node index
 ```
 
 Open browser: <http://127.0.0.1:8000>
+
+
+### compile and run code at once
+
+VS (2012)
+``` bash
+npm install typescript -g & npm install & tsd update -os
+```
+
+with grunt
+``` bash
+npm install typescript -g && npm install && tsd update -os && npm install grunt-cli -g && grunt && node index
+```
+
