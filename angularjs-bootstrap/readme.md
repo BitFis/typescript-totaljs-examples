@@ -2,20 +2,27 @@
 
 ## First step
 
-```
-// global installation of tsd to get up to date definitions
+Global installation of tsd to get up to date definitions
+
+``` bash
 npm install tsd -g
+```
 
-// install dependencies
+Install dependencies
+
+``` bash
 npm install
+```
 
-// load definition files
+Load definition files
+
+``` bash
 tsd update -os
 ```
 
 ## Second step
 
-```
+``` bash
 node index
 ```
 
