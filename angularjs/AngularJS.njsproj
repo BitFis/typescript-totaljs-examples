@@ -24,12 +24,10 @@
     <Content Include="package.json" />
     <Content Include="readme.md" />
     <Content Include="app\robots.txt" />
-    <Compile Include="app\app.js" />
-    <Compile Include="controllers\default.js" />
     <Content Include="views\app.html" />
     <Content Include="views\_layout.html" />
-    <Compile Include="app\controllers\home.js" />
-    <Compile Include="app\controllers\user.js" />
+    <Compile Include="app\controllers\_home.js" />
+    <Compile Include="app\controllers\_user.js" />
     <Content Include="app\css\app.css" />
     <Content Include="app\templates\list.html" />
   </ItemGroup>
@@ -49,6 +47,10 @@
     <Folder Include="views" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="app\app.ts" />
+    <TypeScriptCompile Include="app\controllers\home.ts" />
+    <TypeScriptCompile Include="app\controllers\user.ts" />
+    <TypeScriptCompile Include="controllers\default.ts" />
     <TypeScriptCompile Include="index.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
