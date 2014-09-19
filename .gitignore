@@ -8,6 +8,7 @@ obj
 
 # only commit typings in top typing folder, rest will be loaded dynamically and therefor ignored
 **/typings/*
+!**/typings/tsd.d.ts
 !typings/*
 
 # ignore temporary folder
