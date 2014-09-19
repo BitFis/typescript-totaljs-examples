@@ -4,6 +4,8 @@
     "typescript": ">= 1.0.1"
   },
   "devDependencies": {
-    "tsd": "0.5.x"
+    "tsd": "0.5.x",
+	"grunt": ">= 0.4.5",
+	"grunt-ts": ">= 0.3.8"
   }
 }
