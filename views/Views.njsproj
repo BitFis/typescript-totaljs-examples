@@ -21,9 +21,6 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
-    <Compile Include="controllers\default.js" />
-    <Compile Include="controllers\products.js" />
-    <Compile Include="controllers\users.js" />
     <Content Include="readme.md" />
     <Content Include="views\admin.html" />
     <Content Include="views\dynamic.html" />
@@ -41,6 +38,9 @@
     <Folder Include="views\users" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="controllers\default.ts" />
+    <TypeScriptCompile Include="controllers\products.ts" />
+    <TypeScriptCompile Include="controllers\users.ts" />
     <TypeScriptCompile Include="index.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />

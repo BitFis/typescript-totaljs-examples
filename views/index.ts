@@ -5,5 +5,4 @@
 // http://www.totaljs.com
 // ===================================================
 
-var total = require("total.js");
-total.http("debug");
+require("total.js").http("debug");
