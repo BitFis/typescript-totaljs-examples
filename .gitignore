@@ -6,8 +6,9 @@
 obj
 **/node_modules
 
-# only commit totaljs typings, rest will be loaded dynamically
+# only commit typings in top typing folder, rest will be loaded dynamically and therefor ignored
 **/typings/*
+!typings/*
 
 # ignore temporary folder
 

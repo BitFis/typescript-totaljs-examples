@@ -2,10 +2,11 @@
 
 ## First step
 
-Global installation of tsd to get up to date definitions
+Global installation of tsd & grunt-cli to get up to date definitions
 
 ``` bash
 npm install tsd -g
+npm install grunt-cli -g
 ```
 
 Install dependencies
@@ -18,6 +19,16 @@ Load definition files
 
 ``` bash
 tsd update -os
+```
+
+## Using Visual Studio
+
+Open _AngularJS.njsproj_ and compile project
+
+## Using Grunt
+
+``` bash
+grunt
 ```
 
 ## Second step
