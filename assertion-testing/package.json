@@ -1,0 +1,10 @@
+﻿{
+  "dependencies": {
+    "total.js": ">= 1.6.1",
+    "typescript": ">= 1.0.1"
+  },
+  "devDependencies": {
+	"grunt": ">= 0.4.5",
+	"grunt-ts": ">= 0.3.8"
+  }
+}
