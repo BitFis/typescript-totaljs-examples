@@ -1,23 +1,22 @@
-﻿module users {
+﻿class Users extends TotalJS.Controller{
 
-    export function install() {
-        framework.route('/users/', view_users);
-        framework.route('/users/admin/', view_users_admin);
+    static install() {
+        var self = Users.prototype;
+        framework.route('/users/', self.view_users);
+        framework.route('/users/admin/', self.view_users_admin);
     }
 
-    function view_users() {
-        var self: TotalJS.Controller = this;
-        self.meta('Users');
+    view_users() {
+        this.meta('Users');
 
         // this view is loaded by the controller name: /views/users/index.html
-        self.view('index');
+        this.view('index');
     }
 
-    function view_users_admin() {
-        var self: TotalJS.Controller = this;
-        self.meta('Admin');
-        self.view('~admin');
+    view_users_admin() {
+        this.meta('Admin');
+        this.view('~admin');
     }
 
 }
-export = users;
+export = Users;

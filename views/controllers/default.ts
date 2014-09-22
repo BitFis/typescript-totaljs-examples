@@ -1,20 +1,21 @@
-﻿module app {
+﻿class Default extends TotalJS.Controller {
 
-    export function install() {
-        framework.route("/", view_homepage);
-        framework.route("/new/", view_homepage2);
+    static install() {
+        var self = Default.prototype;
+        framework.route("/", self.view_homepage);
+        framework.route("/new/", self.view_homepage2);
     }
 
-    function view_homepage() {
-        var self: TotalJS.Controller = this;
+    view_homepage() {
+        var self = this;
         self.view("homepage");
     }
 
-    function view_homepage2() {
-        var self: TotalJS.Controller = this;
+    view_homepage2() {
+        var self = this;
         self.layout('_layout_new');
         self.view('homepage');
     }
 
 }
-export = app;
+export = Default;

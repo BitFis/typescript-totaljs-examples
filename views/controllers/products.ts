@@ -1,16 +1,16 @@
-﻿module products {
+﻿class Products extends TotalJS.Controller {
 
-    export function install() {
-        framework.route('/products/', view_products);
+    static install(framework) {
+        var self = Products.prototype;
+        framework.route('/products/', self.view_products);
     }
 
-    function view_products() {
-        var self: TotalJS.Controller = this;
-        self.meta('Products');
+    view_products() {
+        this.meta('Products');
 
         // this view is loaded by the controller name: /views/products/index.html
-        self.view('index');
+        this.view('index');
     }
 
 }
-export = products;
+export = Products;
