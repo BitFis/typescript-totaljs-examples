@@ -186,6 +186,7 @@ declare module TotalJS {
         configure(value, rewrite?): Framework;
 
         controller(name): Controller;
+        controller<T>(name): T;
 
         database(name): NoSQLDatabase;
 
@@ -233,7 +234,7 @@ declare module TotalJS {
                 https?: { key: any; cert: any; };
             }): Framework;
 
-        install(type, name?): Framework;
+        install(type, declaration): Framework;
 
         install(type, name, declaration, options?, callback?): Framework;
 
@@ -880,7 +881,7 @@ declare module TotalJS {
      * 
      * @see http://docs.totaljs.com/how-does-it-work/controllers/
      */
-    interface Controller {
+    class Controller {
 
         /**< Properties */
 
@@ -1277,7 +1278,9 @@ declare module TotalJS {
          */
         find(id: Function): WebSocketClient;
 
-        functions(name: string): Object;
+        // temporary uncommented
+        // functions(name: string): Object;
+        functions: any;
 
         head(value: string): string;
 

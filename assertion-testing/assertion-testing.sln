@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "assertion-testing", "assertion-testing.njsproj", "{69BB06C8-A7FB-4E58-A407-468AB2043637}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81F0BA93-A9FD-4FC4-B515-023EF3747404}"
+	ProjectSection(SolutionItems) = preProject
+		..\typings\totaljs\nosql.d.ts = ..\typings\totaljs\nosql.d.ts
+		..\typings\totaljs\totaljs.d.ts = ..\typings\totaljs\totaljs.d.ts
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

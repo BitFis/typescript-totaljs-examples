@@ -5,4 +5,7 @@
 // http://www.totaljs.com
 // ===================================================
 
+// define TotalJS.Controller
+global.TotalJS = { Controller: {} };
+
 require('total.js').http('test');

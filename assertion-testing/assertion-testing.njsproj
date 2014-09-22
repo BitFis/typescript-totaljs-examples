@@ -25,19 +25,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Gruntfile.js" />
-    <Compile Include="controllers\default.js" />
-    <Compile Include="tests\default.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="controllers" />
+    <Folder Include="definitions\" />
     <Folder Include="tests" />
     <Folder Include="typings\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="readme.md" />
     <Content Include="tsd.json" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="controllers\default.ts" />
+    <TypeScriptCompile Include="definitions\global.ts" />
     <TypeScriptCompile Include="test.ts" />
+    <TypeScriptCompile Include="tests\default.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
