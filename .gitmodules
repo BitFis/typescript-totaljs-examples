@@ -1,0 +1,3 @@
+[submodule "typings/totaljs"]
+	path = typings/totaljs
+	url = git@github.com:bigz94/typescript-totaljs-definitions.git
