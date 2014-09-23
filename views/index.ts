@@ -9,3 +9,4 @@
 global.TotalJS = { Controller: {} };
 
 require("total.js").http("debug");
+console.log(framework.controller);

@@ -19,6 +19,9 @@ Release
 #ignore temporary files
 *.tmp*
 
+# keep total.js
+*/node_modules/total.js/*
+
 # ignore compiled script source
 **/*.js
 **/*.js.map

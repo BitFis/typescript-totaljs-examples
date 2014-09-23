@@ -1,4 +1,5 @@
-﻿class Default extends TotalJS.Controller {
+﻿console.log("controller");
+class Default extends TotalJS.Controller {
 
     static install() {
         var self = Default.prototype;

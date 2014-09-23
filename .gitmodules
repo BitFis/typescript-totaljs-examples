@@ -1,3 +1,6 @@
 [submodule "typings/totaljs"]
 	path = typings/totaljs
 	url = git@github.com:bigz94/typescript-totaljs-definitions.git
+[submodule "views/node_modules/total.js"]
+	path = views/node_modules/total.js
+	url = https://github.com/totaljs/framework.git
