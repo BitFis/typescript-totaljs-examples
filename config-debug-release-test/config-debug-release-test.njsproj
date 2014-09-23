@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{7af73640-2f27-409b-87ee-79f7f9f0c201}</ProjectGuid>
     <ProjectHome />
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
     <StartupFile>
     </StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
@@ -17,14 +17,13 @@
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" >
-	<TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)' == 'Release'" >
-	<TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="controllers\default.js" />
     <Compile Include="Gruntfile.js" />
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +48,7 @@
     <Content Include="config-release" />
     <Content Include="config-test" />
     <Content Include="package.json" />
+    <Content Include="readme.md" />
     <Content Include="tsd.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
