@@ -1,7 +1,7 @@
 ﻿class Default extends TotalJS.Controller{
 
     public static install() {
-        var self = new Default();
+        var self = Default.prototype;
         framework.route('/', self.view_homepage);
     }
 
