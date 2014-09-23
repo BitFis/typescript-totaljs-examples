@@ -1,6 +1,5 @@
 ﻿{
   "dependencies": {
-    "total.js": ">= 1.6.1",
     "typescript": ">= 1.0.1"
   },
   "devDependencies": {

@@ -1,17 +1,12 @@
-﻿// define main class
+﻿// controller class
 class Default extends TotalJS.Controller{
 
-    // make global functions accessible
-    public functions: DefaultFunctions;
-
-    install() {
-        framework.route('/1/', Default.prototype.test1);
-        framework.route('/2/', Default.prototype.test2);
-        framework.route('/3/', Default.prototype.test3, ['post', 'json']);
+    constructor() {
+        super();
+        console.log("constructor");
     }
 
     test1() {
-
         this.plain('1');
     }
 
@@ -25,19 +20,21 @@ class Default extends TotalJS.Controller{
 
     test3() {
         // throw error
-        var self = this;
-        self.json(self.body);
+        this.json(this.body);
     }
-
-    
 }
 
-class DefaultFunctions {
-    public increment(num: number): number {
+// install function
+export function install() {
+    var self = Default.prototype;
+    framework.route('/1/', self.test1);
+    framework.route('/2/', self.test2);
+    framework.route('/3/', self.test3, ['post', 'json']);
+}
+
+// static functions packed in class
+export class functions {
+    public static increment(num?: number): number {
         return num + 1;
     }
 }
-
-// define controller functions
-exports.install = Default.prototype.install;
-exports.functions = DefaultFunctions.prototype;

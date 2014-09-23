@@ -52,7 +52,8 @@ Open browser: <http://127.0.0.1:8000>
 ### compile and start server
 
 use following oneliner to compile ts and run server (only possible with grunt)
+requires: Typescript & tsd & grunt installed
 ``` bash
-npm install && tsd update -os && grunt && node index
+npm install && tsd update -os && grunt && node test
 ```
 

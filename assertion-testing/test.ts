@@ -6,6 +6,6 @@
 // ===================================================
 
 // define TotalJS.Controller
-global.TotalJS = { Controller: {} };
-
-require('total.js').http('test');
+require('total.js').on('init', function (type, name) {
+    global.TotalJS = { Controller: {} };
+}).http('test');

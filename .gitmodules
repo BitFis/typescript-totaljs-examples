@@ -7,3 +7,9 @@
 [submodule "config-debug-release-test/node_modules/total.js"]
 	path = config-debug-release-test/node_modules/total.js
 	url = git@github.com:totaljs/framework.git
+[submodule "angularjs/node_modules/total.js"]
+	path = angularjs/node_modules/total.js
+	url = git@github.com:totaljs/framework.git
+[submodule "assertion-testing/node_modules/total.js"]
+	path = assertion-testing/node_modules/total.js
+	url = git@github.com:totaljs/framework.git

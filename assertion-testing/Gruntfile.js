@@ -30,7 +30,7 @@
             },
 
             target: {
-                src: ["controllers/**/*.ts", "app/**/*.ts", "index.ts"],
+                src: ["controllers/**/*.ts", "app/**/*.ts", "tests/**/*.ts", "test.ts"],
                 html: [],
                 reference: 'obj/reference_server.ts',
             //    out: 'index.js',

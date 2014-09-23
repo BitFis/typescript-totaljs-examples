@@ -7,7 +7,7 @@ export function run(framework: TotalJS.Framework) {
      */
 
     framework.assert('controller.increment()', function (next, name) {
-        assert.ok(framework.controller<Default>('default').functions.increment(1) === 2, name);
+        assert.ok(framework.controller('default').functions.increment(1) === 2, name);
         next();
     });
 
