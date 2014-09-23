@@ -18,4 +18,5 @@
     }
 
 }
+console.log('init controller');
 export = Default;

@@ -1,6 +1,0 @@
-[submodule "typings/typescript-totaljs-definitions"]
-	path = typings/typescript-totaljs-definitions
-	url = git@github.com:bigz94/typescript-totaljs-definitions.git
-[submodule "totaljs"]
-	path = totaljs
-	url = git@github.com:bigz94/typescript-totaljs-definitions.git

@@ -8,5 +8,11 @@
 // define TotalJS.Controller for controller classes
 global.TotalJS = { Controller: {} };
 
+framework = require("total.js")
 
-require("total.js").http("debug");
+framework.on('init', function () {
+    console.log('init called');
+});
+console.log('start called');
+
+framework.http("debug");
