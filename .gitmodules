@@ -4,3 +4,6 @@
 [submodule "views/node_modules/total.js"]
 	path = views/node_modules/total.js
 	url = https://github.com/totaljs/framework.git
+[submodule "config-debug-release-test/node_modules/total.js"]
+	path = config-debug-release-test/node_modules/total.js
+	url = git@github.com:totaljs/framework.git
