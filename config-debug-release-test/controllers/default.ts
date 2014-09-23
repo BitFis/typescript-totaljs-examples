@@ -1,20 +1,20 @@
-﻿module app {
+﻿class Default extends TotalJS.Controller{
 
-    export function install() {
-        framework.route('/', view_homepage);
+    public static install() {
+        var self = new Default();
+        framework.route('/', self.view_homepage);
     }
 
-    function view_homepage() {
+    view_homepage() {
         var builder = [];
-        var self = this;
 
-        Object.keys(self.config).forEach(function (o) {
-            var value = self.config[o];
-            builder.push('{0} : {1}'.format(o.padRight(30, ' '), value instanceof Array ? value.join(', ') : value));
+        Object.keys(this.config).forEach((o) => {
+            var value = this.config[o];
+
+            builder.push('{0} : {1}'.format(o.padRight(30, ' '), this.config[o] instanceof Array ? value.join(', ') : value)); 
         });
 
-        self.plain(builder.join('\n'));
+        this.plain(builder.join('\n'));
     }
-
 }
-export = app;
+export = Default;
