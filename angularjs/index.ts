@@ -4,6 +4,8 @@
 // total.js - web application framework for node.js
 // http://www.totaljs.com
 // ===================================================
+
+// define class for controllers
 global.TotalJS = {
     Controller: {}
 };
