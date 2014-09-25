@@ -5,4 +5,7 @@
 // http://www.totaljs.com
 // ===================================================
 
+// define TotalJS namespace & classes for typescript
+global.TotalJS = { Controller: {} };
+
 require('total.js').http('debug');

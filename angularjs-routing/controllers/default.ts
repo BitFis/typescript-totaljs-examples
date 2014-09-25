@@ -1,12 +1,12 @@
-﻿module app {
-    
-    export function install() {
-        framework.route('/*', view_app);
-    };
+﻿class Default extends TotalJS.Controller {
 
-    function view_app() {
-        var self = this;
-        self.view('app');
+    view_app() {
+        this.view('app');
     }
+
 }
-export = app;
+
+export function install() {
+    var self = Default.prototype;
+    framework.route('/*', self.view_app);
+}

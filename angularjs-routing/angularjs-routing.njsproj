@@ -17,7 +17,7 @@
     <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" >
-	<TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+	<TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" >
 	<TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>

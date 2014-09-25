@@ -1,10 +1,14 @@
 ﻿module App {
 
     class ProductsCtrl {
-        constructor($scope: HomeScope) {
+        constructor(private $scope: HomeScope) {
             $scope.name = 'Products';
         }
+
+        public static $inject = [
+            '$scope'
+        ];
     }
 
-    app.controller('ProductsCtrl', ['$scope', ProductsCtrl]);
+    app.controller('ProductsCtrl', ProductsCtrl);
 }

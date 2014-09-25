@@ -5,10 +5,14 @@
     }
 
     class HomeCtrl {
-        constructor($scope: HomeScope) {
+        constructor(private $scope: HomeScope) {
             $scope.name = 'Homepage';
         }
+
+        public static $inject = [
+            '$scope'
+        ];
     }
 
-    app.controller('HomeCtrl', ['$scope', HomeCtrl]);
+    app.controller('HomeCtrl', HomeCtrl);
 }

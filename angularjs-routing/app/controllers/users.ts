@@ -2,10 +2,14 @@
 
     class UsersCtrl {
 
-        constructor($scope: HomeScope) {
+        constructor(private $scope: HomeScope) {
             $scope.name = 'Users';
         }
+
+        public static $inject = [
+            '$scope'
+        ];
     }
     
-    app.controller("UsersCtrl", ['$scope', UsersCtrl]);
+    app.controller("UsersCtrl", UsersCtrl);
 }
