@@ -10,3 +10,9 @@
 [submodule "assertion-testing/node_modules/total.js"]
 	path = assertion-testing/node_modules/total.js
 	url = git@github.com:totaljs/framework.git
+[submodule "framework-modules/node_modules/framework"]
+	path = framework-modules/node_modules/framework
+	url = git@github.com:totaljs/framework.git
+[submodule "routing/node_modules/total.js"]
+	path = routing/node_modules/total.js
+	url = git@github.com:totaljs/framework.git
