@@ -1,9 +1,17 @@
-﻿
+﻿class Utils extends TotalJS.Controller {
 
+    public id: string = 'utils';
 
-exports.name = 'utils';
-exports.version = '1.01';
+    public version: string = '1.01';
 
-exports.now = function now() {
-    return new Date();
-};
+    public now() {
+        return new Date();
+    }
+
+}
+
+// export module information - use exports.<func/var> so module can be used as class
+var self = Utils.prototype;
+exports.id = self.id;
+exports.version = self.version;
+exports.now = self.now;

@@ -1,22 +1,24 @@
-﻿class Default extends TotalJS.Controller {
+﻿///<reference path="../modules/feedback.ts" />
 
-    public static install() {
+class Default extends TotalJS.Controller {
+
+    public install() {
         var self = Default.prototype;
-        framework.route('/', self.view_homepage);
+        framework.route('/', this.view_homepage);
     }
 
-    view_homepage() {
-
+    public view_homepage() {
+        
         // call module
-        var now = this.module('utils').now();
-
+        var now: Date = (<Utils>this.module('utils')).now();
+        
         // or
-        // console.log(MODULE('feedback'));
-        // var greeting = MODULE('feedback').greeting('Thanks');
-        MODULE('feedback').greeting('Thanks');
-        var greeting = "hello";
-        this.plain('From module utils -> {0} ({1})'.format(now, greeting));
+        var greeting: string = (<Feedback>MODULE('feedback')).greeting('Thanks');
+        this.plain(<string>"From module utils -> {0} ({1})".format(now.toString(), greeting));
     }
-
 }
-export = Default;
+
+// export controller information - use exports. so module can be used as class
+var self = Default.prototype;
+exports.install = self.install;
+exports.view_homepage = self.view_homepage;

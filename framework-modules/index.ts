@@ -11,5 +11,4 @@ global.TotalJS = { Controller: {} };
 //import tst = require('./modules/feedback');
 
 //tst.greeting("IT WORKS");
-console.log(require("./modules/feedback.js"));
 require('total.js').http('debug');
