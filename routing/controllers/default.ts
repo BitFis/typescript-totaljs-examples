@@ -16,6 +16,8 @@
         // url: /asterix/bla/bla/bla/bla/
         framework.route('/asterix/*', self.view_asterix);
 
+        framework.route('/other/*', self.view_otherasterix);
+
         // route: all txt files
         // Documentation: http://docs.totaljs.com/Framework/#framework.file
         // Try: http://127.0.0.4/test.txt
@@ -61,6 +63,11 @@
     view_asterix() {
         var self = this;
         self.plain(<string>'asterix -> ' + (<any>self.uri).pathname);
+    }
+
+    view_otherasterix() {
+        var self = this;
+        self.plain(<string>'otherasterix -> ' + (<any>self.uri).pathname);
     }
 
     view_products(category: string, subcategory: string) {
